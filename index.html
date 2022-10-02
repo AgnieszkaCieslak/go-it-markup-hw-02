@@ -5,73 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="alc" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Studio</title>
   </head>
   <body>
     <header>
-      <a href="#">WebStudio</a>
-      <nav>
-        <ul>
-          <li><a href="#">Agencja</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Kontakt</a></li>
+      <section class="menu-index">
+        <a class="logo blue-menu" href="index.html">Web<span class="logo-black">Studio</span></a>
+        <nav>
+          <ul class="links-apc-menu-index">
+            <li><a class="agency-index" href="#">Agencja</a></li>
+            <li><a class="portfolio-index" href="#">Portfolio</a></li>
+            <li><a class="contact-index" href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="links-mt-menu-index">
+          <li><a class="mail-index" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="tel-index" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-      </ul>
-      <section>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button">Zamów usługe</button>
+      </section>
+      <section class="header-description-index">
+        <h1 class="header-text-index">EFEKTYWNE ROZWIĄZANIA <br>DLA WASZEGO BIZNESU</h1>
+        <button class="button-index" type="button">Zamów usługe</button>
       </section>
     </header>
     <main>
       <section>
-        <ul>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+        <ul class="list-lorem-index">
+          <li class="first">
+            <h3 class="lorem-text-index">LOREM IPSUM</h3>
+            <p class="description-lorem-index">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="second-third-fourth">
+            <h3 class="lorem-text-index">LOREM IPSUM</h3>
+            <p class="description-lorem-index">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="second-third-fourth">
+            <h3 class="lorem-text-index">LOREM IPSUM</h3>
+            <p class="description-lorem-index">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="second-third-fourth">
+            <h3 class="lorem-text-index">LOREM IPSUM</h3>
+            <p class="description-lorem-index">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Czym się zajmujemy</h2>
-        <ul>
-          <li>
+      <section class="what-we-do-index">
+        <h2 class="header-what-we-do-index">Czym się zajmujemy</h2>
+        <ul class="image-list-index">
+          <li class="coding-image">
             <img
               src="images/coding-image.jpg"
-              alt="Coding"
+              alt="typing-in-front-of-the-monitor"
               width="370"
               height="294"
-              
             />
           </li>
-          <li>
+          <li class="layout-design-image">
             <img
               src="images/layout-image.jpg"
               alt="Layout"
@@ -79,7 +87,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="layout-design-image">
             <img
               src="images/design-image.jpg"
               alt="Design"
@@ -89,11 +97,11 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Nasz zespół</h2>
-        <ul>
+      <section class="our-team-index">
+        <h2 class="header-our-team-index">Nasz zespół</h2>
+        <ul class="list-team-index">
           <li>
-            <figure>
+            <figure class="john-doe-produkt-designer">
               <img
                 src="images/john-doe-produkt-designer.jpg"
                 alt="Produckt-Designer"
@@ -101,16 +109,16 @@
                 height="260"
               />
               <figcaption>
-                <h4>John Doe</h4>
-                <p>Produckt Designer</p>
+                <h4 class="our-team-description">John Doe</h4>
+                <p class="our-team-text">Produckt Designer</p>
               </figcaption>
-            </figure>
+            </figure >
           </li>
           <li>
-            <figure>
+            <figure class="john-doe-frontend-developer">
               <img
-              src="images/john-doe-frontend-developer.jpg"
-              alt="Frontend-Developer"
+                src="images/john-doe-frontend-developer.jpg"
+                alt="Frontend-Developer"
                 width="270"
                 height="260"
               />
@@ -121,7 +129,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="john-doe-marketing">
               <img
                 src="images/john-doe-marketing.jpg"
                 alt="Marketing"
@@ -135,7 +143,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="john-doe-ui-designer">
               <img
                 src="images/john-doe-ui-designer.jpg"
                 alt="UI-Designer"
@@ -152,12 +160,12 @@
       </section>
     </main>
     <footer>
-      <address>
-        <a href="#">WebStudio</a>
-        <ul>
-          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+      <address class="footer-index">
+        <a class="logo blue-footer" href="index.html">Web<span class="logo-white">Studio</span></a>
+        <ul class="links-amt-footer-index">
+          <li><p class="a-footer-index">m. Warszawa, Aleje Jerozolimskie 21</p></li>
+          <li><a class="m-footer-index" href="mailto:info@example.com">info@example.com</a></li>
+          <li><a class="t-footer-index" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
       </address>
     </footer>
