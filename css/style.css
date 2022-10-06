@@ -31,34 +31,37 @@ body {
 .logo-white {
   color: white;
 }
-.links-amt-footer-index {
+.links-apc-menu-index,
+.links-mt-menu-index,
+.links-apc-menu-portfolio,
+.links-mt-menu-portfolio {
+  display: flex;
   list-style-type: none;
 }
 .links-apc-menu-index,
-.links-mt-menu-index,
-.list-lorem-index,
-.image-list-index,
-.list-team-index {
-  list-style-type: none;
-  display: flex;
-}
-.links-apc-menu-index {
+.links-apc-menu-portfolio {
   margin-top: 32px;
-  margin-left: 93px;
   margin-bottom: auto;
+  margin-left: 93px;
   padding-left: 0px;
-  width: 272px;
   justify-content: space-between;
+  width: 272px;
 }
-.links-mt-menu-index {
+.links-mt-menu-index,
+.links-mt-menu-portfolio {
   margin-top: 32px;
   padding-left: 0px;
 }
 .agency-index,
+.agency-portfolio,
 .portfolio-index,
+.portfolio-portfolio,
 .contact-index,
+.contact-portfolio,
 .mail-index,
-.tel-index {
+.mail-portfolio,
+.tel-index,
+.tel-portfolio {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -68,21 +71,35 @@ body {
   color: #212121;
   text-decoration: none;
 }
-.agency-index:hover,
+.agency-index,
+.agency-portfolio:hover,
 .portfolio-index:hover,
+.portfolio-portfolio,
 .contact-index:hover,
+.contact-portfolio:hover,
 .mail-index:hover,
-.tel-index:hover {
+.tel-index:hover,
+.a-footer-index:hover,
+.m-footer-index:hover,
+.t-footer-index:hover,
+.a-footer-portfolio:hover,
+.m-footer-portfolio:hover,
+.t-footer-portfolio:hover
+ {
   color: #2196f3;
 }
 .mail-index,
-.tel-index {
+.mail-portfolio,
+.tel-index,
+.tel-portfolio {
   color: #757575;
 }
-.mail-index {
+.mail-index,
+.mail-portfolio {
   margin-left: 353px;
 }
-.tel-index {
+.tel-index,
+.tel-portfolio {
   margin-left: 50px;
 }
 .header-description-index {
@@ -93,10 +110,10 @@ body {
 .header-text-index {
   font-family: "Roboto";
   font-style: normal;
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -126,40 +143,34 @@ body {
 }
 .list-lorem-index {
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  width: 1600px;
-  height: 195px;
+  padding-top: 94px;
+  padding-left: 215px;
+  width: 1385px;
+  height: 101px;
   background-color: white;
-}
-.first {
-  margin-top: 94px;
-  margin-left: 215px;
-}
-.second-third-fourth {
-  margin-top: 94px;
-  margin-left: 30px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  grid-column-gap: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 .lorem-text-index {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #212121;
+  text-transform: uppercase;
 }
 .description-lorem-index {
   width: 270px;
   margin-top: 10px;
-  font-family: "Roboto";
-  font-style: normal;
+  margin-bottom: 0px;
   font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 .what-we-do-index {
@@ -182,61 +193,56 @@ body {
 }
 .image-list-index {
   margin-top: 50px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-}
-.coding-image {
-  margin-left: 215px;
-}
-.layout-design-image {
-  margin-left: 30px;
+  margin-bottom: 94px;
+  padding-left: 215px;
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  grid-column-gap: 30px;
+  list-style-type: none;
 }
 .our-team-index {
   margin: 0 0 0 0;
   width: 1600px;
   height: 648px;
   background-color: #f5f4fa;
+  font-family: "Roboto";
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .header-our-team-index {
   margin: 0 0 0 0;
   padding-top: 94px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 .list-team-index {
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
-.our-team-description {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
+  padding-top: 50px;
+  padding-left: 215px;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  grid-column-gap: 30px;
+  list-style-type: none;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
+}
+.our-team-description {
+  font-weight: 500;
   color: #212121;
 }
 .our-team-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 .john-doe-produkt-designer,
 .john-doe-frontend-developer,
 .john-doe-marketing,
 .john-doe-ui-designer {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   text-align: center;
   width: 270px;
   height: 368px;
@@ -245,21 +251,8 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.john-doe-produkt-designer {
-  margin-top: 50px;
-  margin-right: 0px;
-  margin-left: 215px;
-  margin-bottom: 0px;
-}
-.john-doe-frontend-developer,
-.john-doe-marketing,
-.john-doe-ui-designer {
-  margin-top: 50px;
-  margin-right: 0px;
-  margin-left: 30px;
-  margin-bottom: 0px;
-}
-.footer-index {
+.footer-index,
+.footer-portfolio {
   padding-top: 60px;
   width: 1600px;
   height: 192px;
@@ -269,15 +262,14 @@ body {
   padding-top: 0px;
   margin-left: 215px;
 }
-.links-amt-footer-index {
+.links-amt-footer-index,
+.links-amt-footer-portfolio {
   padding-left: 215px;
   margin-top: 20px;
   margin-bottom: 60px;
   width: 246px;
   height: 81px;
-}
-.a-footer-index {
-  margin: 0 0 0 0;
+  list-style-type: none;
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
@@ -285,17 +277,109 @@ body {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+.a-footer-index,
+.a-footer-portfolio {
+  margin: 0 0 0 0;
   color: #ffffff;
 }
 .m-footer-index,
-.t-footer-index {
+.m-footer-portfolio,
+.t-footer-index,
+.t-footer-portfolio {
   padding-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+.main-portfolio {
+  width: 1600px;
+  background-color: #ffffff;
+}
+.button-portfolio-section {
+  padding-top: 94px;
+  padding-left: 510px;
+  display: grid;
+  grid-template-columns: 121px 93px 114px 91px 121px 50px;
+  grid-template-rows: 38px;
+  grid-column-gap: 8px;
+  width: 1090px;
+}
+.button-wszystkie-portfolio,
+.button-strony-portfolio,
+.button-aplikacje-portfolio,
+.button-dizajn-portfolio,
+.button-marketing-portfolio {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: #f5f4fa;
+}
+.button-wszystkie-portfolio:hover,
+.button-strony-portfolio:hover,
+.button-aplikacje-portfolio:hover,
+.button-dizajn-portfolio:hover,
+.button-marketing-portfolio:hover {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.picture-box-portfolio {
+  margin-top: 50px;
+  margin-left: 215px;
+  padding-bottom: 94px;
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+}
+.technocrack-prtfolio,
+.new-orleans-vs-golden-star-portfolio,
+.seafood-portfolio,
+.projekt-prime-prtfolio,
+.projekt-boxes-prtfolio,
+.inspirations-prtfolio,
+.magazyn-prtfolio,
+.lab-prtfolio,
+.business-prtfolio {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.picture-header-portfolio {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.picture-description-portfolio {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 4px;
+  margin-left: 24px;
+}
+.pointer {
+  cursor: pointer;
 }
