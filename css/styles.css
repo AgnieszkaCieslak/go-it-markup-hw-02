@@ -1,20 +1,20 @@
+:root {
+  --background-color-white: #ffffff;
+  --background-color-dark-blue: #2f303a;
+  --background-color-light-grey: #f5f4fa;
+  --color-white: #ffffff;
+  --color-dark: #212121;
+  --color-black: #000000;
+  --color-blue: #2196f3;
+  --color-dark-grey: #757575;
+  --color-light-grey: rgba(255, 255, 255, 0.6);
+}
 body {
   width: 1600px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  color: #212121;
-  background-color: #ffffff;
-}
-:root {
-  --background-1-color: #ffffff;
-  --background-2-color: #2f303a;
-  --background-3-color: #f5f4fa;
-  --color-white: #ffffff;
-  --color-black-1: #212121;
-  --color-black-2: #000000;
-  --color-blue: #2196f3;
-  --color-dark-grey: #757575;
-  --color-light-grey: rgba(255, 255, 255, 0.6);
+  color: var(--color-dark);
+  background-color: var(--background-color-white);
 }
 .menu-index {
   display: flex;
@@ -29,7 +29,7 @@ body {
   text-decoration: none;
 }
 .logo-black {
-  color: var(--color-black-2);
+  color: var(--color-black);
 }
 .logo-white {
   color: var(--color-white);
@@ -45,8 +45,8 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.black {
-  color: var(--color-black-1);
+.dark {
+  color: inherit;
 }
 .blue {
   color: var(--color-blue);
@@ -69,7 +69,7 @@ body {
   color: var(--color-blue);
 }
 .header-description-index {
-  background-color: var(--background-2-color);
+  background-color: var(--background-color-dark-blue);
 }
 .header-text-index {
   font-weight: 900;
@@ -77,11 +77,11 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--background-1-color);
+  color: var(--background-color-white);
 }
 .button-index {
   display: flex;
-  font-family: "Roboto";
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -106,7 +106,6 @@ body {
   text-transform: uppercase;
 }
 .description-lorem-index {
-  font-weight: 400;
   line-height: 1.71;
   color: var(--color-dark-grey);
 }
@@ -124,7 +123,7 @@ body {
 }
 .our-team-index {
   letter-spacing: 0.03em;
-  background-color: var(--background-3-color);
+  background-color: var(--background-color-light-grey);
 }
 .header-our-team-index {
   font-weight: 700;
@@ -140,7 +139,7 @@ body {
   list-style-type: none;
 }
 .image-team-index {
-  background-color: var(--background-1-color);
+  background-color: var(--background-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -149,40 +148,39 @@ body {
   font-weight: 500;
 }
 .our-team-text {
-  font-weight: 400;
   color: var(--color-dark-grey);
 }
 .footer-index,
 .footer-portfolio {
-  background-color: var(--background-2-color);
+  font-style: inherit;
+  background-color: var(--background-color-dark-blue);
 }
 .list-footer {
   list-style-type: none;
 }
 .adress-footer,
 .links-footer {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.button-portfolio-section {
+.list-buttom-portfolio {
+  list-style-type: none;
   display: grid;
   grid-template-columns: 121px 93px 114px 91px 121px 50px;
   grid-template-rows: 38px;
   grid-column-gap: 8px;
 }
 .button-portfolio {
-  font-family: "Roboto";
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  background: var(--background-3-color);
+  background: var(--background-color-light-grey);
   border-radius: 4px;
-  border: var(--background-3-color);
+  border: var(--background-color-light-grey);
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -208,7 +206,6 @@ body {
   letter-spacing: 0.06em;
 }
 .picture-description-portfolio {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
